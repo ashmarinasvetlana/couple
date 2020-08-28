@@ -1,0 +1,41 @@
+.features
+    background: url("../img/features-bg.jpg") no-repeat 
+    background-size: cover 
+    padding-top: 70px
+    &__bg
+        font-size: 1320px
+        line-height: 1603px
+        +reg
+        position: absolute
+        z-index: 1
+        top: 50px
+        text-transform: uppercase
+        left: 25%
+        color: rgba(112, 102, 102, 0.02)
+    &-title
+        &__span
+            display: block
+            margin-left: 338px
+            margin-top: -50px
+            margin-bottom: 15px
+    &__undertitle
+        margin-top: -200px
+    &-block
+        display: flex
+        flex-wrap: wrap
+        width: 50%
+        &__title
+            +m-semibold
+            font-size: 18px
+            color: $active
+        &__text
+            +text
+        &__item
+            margin-right: 60px
+            max-width: 179px
+            margin-top: 60px
+        &__word
+            margin-bottom: 10px
+.feature__two
+    transform: translateY(200px)
+   

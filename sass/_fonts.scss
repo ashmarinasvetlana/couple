@@ -1,0 +1,89 @@
+
+
+@mixin reg {
+  font-family: Cosma-Normal-UltraLight;
+  font-weight: 200;
+}
+
+@mixin m-reg {
+  font-family: 'Montserrat', sans-serif;
+}
+
+@mixin m-medium {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+@mixin m-semibold {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
+@mixin h2 { 
+  font-family: Cosma-Normal-UltraLight;
+  font-weight: 200;
+  font-size: 143px;
+  line-height: 174px;
+  color: $text-color
+}
+
+@mixin h3 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+@mixin h3_active {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #C99A5A;
+}
+
+@mixin text {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 23px;
+  color: $text-color
+}
+
+@mixin text_medium {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 145%;
+  color: $text-color
+}
+
+@mixin price {
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: $text-color;
+}
+
+@mixin price_active {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: #C99A5A;
+}
+
+
+
+

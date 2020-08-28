@@ -1,0 +1,27 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3933858, 2020-08-10T07:06:34-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: Cosma-Normal-UltraLight by Wiescher Design
+ * URL: https://www.myfonts.com/fonts/wiescherdesign/cosma/normal-ultra-light/
+ * Copyright: Copyright (c) 2019 by \ Gert Wiescher, Wiescher-Design, Munich, Germany,\ www.wiescher-design.de. All rights reserved.
+ * 
+ * 
+ * 
+ * © 2020 MyFonts Inc
+*/
+
+
+
+  
+@font-face {
+  font-family: 'Cosma-Normal-UltraLight';
+  src: url('webFonts/Cosma-Normal-UltraLight/font.woff2') format('woff2'), url('webFonts/Cosma-Normal-UltraLight/font.woff') format('woff');
+}
+

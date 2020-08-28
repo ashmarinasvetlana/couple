@@ -1,0 +1,59 @@
+
+.about
+    margin-top: 200px
+    position: relative
+    padding-top: 180px
+    background: url("../img/about-bg.jpg") no-repeat top right 
+    background-size: 47%
+    &-title
+        &__span
+            display: block
+            margin-left: 390px
+            margin-top: -20px
+            margin-bottom: 15px
+            font-size: 90px
+    &__bg
+        font-size: 560px
+        position: absolute
+        opacity: 0.02
+        +reg
+        text-transform: uppercase
+    &__description
+    &-description
+        display: flex
+        &__left
+        &__right
+            margin-left: 20px
+            margin-top: 90px
+        &__item
+            display: flex
+        &__number
+            +reg
+            font-size: 24px
+            color: $text-color
+            opacity: 0.45
+            margin-right: 10px
+        &__text
+            +text
+            max-width: 175px
+    &-text
+        display: flex
+        margin-top: 60px
+        &__wrap
+            margin-left: 50px
+        &__img
+            max-width: 100%
+        &__title
+            +h3
+        &__text
+            +text
+            max-width: 340px
+            margin-top: 10px
+.bg__right
+    position: absolute
+    left: 68%
+    margin-top: -150px
+.bg__left
+    position: absolute
+    top: 160px
+    left: -70px

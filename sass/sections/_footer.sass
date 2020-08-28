@@ -1,0 +1,33 @@
+.footer
+    padding: 60px
+    background-color: #394844
+    min-height: 141px
+    color: rgba(255, 255, 255, 0.8)
+    &__wrap
+        display: flex
+        align-items: center
+        justify-content: space-between
+    &__nav
+        display: flex
+        justify-content: space-between
+    
+    &__logo
+        +reg
+        font-size: 20px
+        line-height: 24px
+        text-transform: uppercase
+        letter-spacing: 0.03em
+    &__link
+        color: rgba(255, 255, 255, 0.8)
+        margin-left: 30px
+        +m-reg
+        font-size: 14px
+        display: block
+        &:hover
+            color: $active
+    &__info
+        display: flex
+    &__year
+        margin-left: 50px
+        +m-reg
+    

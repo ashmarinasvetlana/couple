@@ -1,0 +1,81 @@
+.price
+    &-description
+        display: flex
+        justify-content: space-between
+        align-items: center
+        +text
+        &__wrap
+            display: flex
+            align-items: center
+            margin-bottom: 70px
+        &__text
+            max-width: 290px
+            margin-left: 40px
+            margin-top: 0px
+            margin-bottom: 0px
+    &-block
+        width: 346px
+        min-height: 615px
+        padding-top: 80px
+        padding-bottom: 55px
+        padding-left: 38px
+        padding-right: 38px
+        display: flex
+        flex-direction: column
+        background: #FFFFFF
+        box-shadow: 10px 10px 40px rgba(244, 238, 237, 0.5)
+        border-radius: 10px
+        border-top: 5px solid rgba(225, 197, 159, 0.5)
+        cursor: pointer
+        transition-duration: 2s
+        &:hover
+            border-top: 7px solid $active
+            .price-block__title
+                color: $active-dark
+                transition-duration: 2s
+            .price-block__price
+                color: $active-dark
+                transition-duration: 2s
+            .price-block__btn
+                background-color: $active
+                transition-duration: 2s
+        &__wrap
+            display: flex
+            justify-content: space-between
+            align-items: center
+        &__title
+            text-align: center
+            +m-semibold
+            font-size: 20px
+            margin: 12px
+            transition-duration: 2s
+        &__price
+            text-align: center
+            +price
+            transition-duration: 2s
+        &__withoutprice
+            margin-bottom: 15px
+        &__time
+            +text_medium
+            display: block
+            text-transform: none
+        &__text
+            +text
+            margin-bottom: 14px
+            margin-top: 30px
+        &__btn
+            margin: 0 auto
+            margin-top: 68px
+            align-self: flex-end
+            transition-duration: 1s
+        &__description
+            margin-top: 10px
+            +text
+        &__undertitle
+            margin-bottom: 10px
+        &__active
+            border-top: 7px solid $active
+.active
+    color: $active-dark
+.button__active
+    background-color: $active

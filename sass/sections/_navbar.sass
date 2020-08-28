@@ -1,0 +1,113 @@
+
+.navbar
+    padding-top: 60px
+    padding-bottom: 30px
+    &__mobile
+        margin-left: 500px
+    &-wrap
+        display: flex
+        justify-content: space-between  
+    &__logo
+        font-size: 18px
+        text-transform: uppercase
+        letter-spacing: 0.03em
+        +reg
+        color: $text-color
+    &__link
+        font-size: 14px
+        color: $text-color
+        margin-left: 45px
+        +m-reg
+        &:hover
+            color: $active-dark
+            transition-duration: 0.7s
+    &__phone
+        font-size: 14px
+        color: $text-color
+        margin-left: 60px
+.logo__link
+    color: $text-color
+
+	    
+.menu
+    position: fixed
+    z-index: 999
+    background-color:#F9F7F4
+    top: 0
+    width: 100vw
+    height: 100vh
+    z-index: 1
+    display: flex
+    justify-content: center
+    align-items: center
+    left: 100vw
+    transition-duration: 1.5s
+    color: $text-color
+    &-a
+        text-decoration: none
+        background-color: transparent
+        display: block
+        margin-top: 50px
+        font-size: 18px
+        color: $text-color
+        transition-duration: 0.5s
+        +m-reg
+        &:hover
+            color: $active-dark
+            transition-duration: 0.5s
+            transform: translateX(10px)
+    &-link
+        margin-top: 8px
+        z-index: 9
+        display: block
+        width: 50px
+        height: 50px
+        transition-duration: 1s
+.service-hover
+    display: block
+    height: 1px
+    width: 26px
+    position: absolute
+    background-color: $text-color
+    &::after
+        position: absolute
+        display: block
+        content: ''
+        height: 1px
+        width: 26px
+        background-color: $text-color
+        margin-top: 5px
+        transition-duration: 1s
+    &::before
+        position: absolute
+        display: block
+        content: ''
+        height: 1px
+        width: 26px
+        background-color: $text-color
+        margin-top: -5px
+        transition-duration: 1s
+
+.menu-link_active
+    color: $text-color
+    .service-hover
+        background-color: transparent
+        &::before
+	        transform: rotate(135deg)
+	        margin-top: 0
+            transition-duration: 1.2s
+        &::after
+	        transform: rotate(-135deg)
+	        margin-top: 0
+            transition-duration: 1.2s
+.menu_active
+    left: 0
+    transition-duration: 1.2s
+
+
+        
+                
+
+
+           
+      

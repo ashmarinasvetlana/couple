@@ -1,0 +1,85 @@
+.order
+    background: url("../img/order-bg.jpg") no-repeat right top 15px
+    margin-top: 200px
+    &__wrap
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__text
+        display: flex
+        flex-direction: column
+        justify-content: center
+        margin-top: 0px
+        transform: translateY(20px)
+        transition-duration: 2s
+        &-block
+            margin-left: 10px
+    &-item
+        position: relative
+        min-height: 300px
+        min-width: 348px
+        padding: 20px 35px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        cursor: pointer
+        transition-duration: 2s
+        &:hover
+            .order-item__btn
+                opacity: 1
+                transition-duration: 2s
+            .order-item__text
+                color: $active
+            background-color: #fff
+            box-shadow: 10px 10px 40px rgba(244, 238, 237, 0.5)
+            border-radius: 20px
+            .order__text
+                transform: translateY(-20px)
+                transition-duration: 2s
+        &__title
+            +reg
+            font-size: 30px
+            margin-bottom: 15px
+            margin-top: 0px
+            
+        &__bg
+            position: absolute
+            +reg
+            font-size: 250px
+            color: $text-color
+            opacity: 0.03
+            margin: 0px
+        &__text
+            +text
+            max-width: 219px
+            transition-duration: 2s
+            margin: 0 auto
+            margin-top: 0px
+            margin-bottom: 25px
+        &__btn
+            width: 195px
+            height: 45px
+            background: $active
+            border-radius: 5px
+            border: none
+            +m-reg
+            font-size: 12px
+            line-height: 15px
+            display: block
+            opacity: 0
+            text-align: center
+            transition-duration: 2s
+            margin-top: 25px
+            margin: 0 auto
+    &__number
+        display: block
+        +reg
+        font-size: 30px
+        margin-bottom: 15px
+        margin-top: 0px
+.order__text-wrap
+    display: flex
+           
+            
+            

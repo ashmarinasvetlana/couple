@@ -1,0 +1,84 @@
+.contacts
+    background: url("../img/contacts/contacts-bg.png") no-repeat top -80px right
+    &__info
+        margin-left: 70px
+        margin-top: 30px
+    &__wrap
+        display: flex
+        justify-content: space-between
+        position: relative
+    &__link
+        display: flex
+        align-items: center
+        margin-top: 30px
+        transition-duration: 1.3s
+        +m-reg
+        color: $text-color
+        &-right
+            margin-left: 20px
+            opacity: 0
+            transition-duration: 1.3s
+        &:hover
+            color: $active
+            .contacts__link-right
+                opacity: 1
+                transition-duration: 1.3s
+    &__icon
+        margin-left: 20px
+        margin-right: 20px
+    &__links
+        display: flex
+        flex-direction: column
+    &__form
+        margin-top: 60px
+    &-form
+        &__header
+            +h3
+            font-size: 18px
+            margin-bottom: 50px
+    &__btn
+        display: block
+    &__img
+        &-right
+            position: relative
+            z-index: -3
+            margin-left: 30%
+            margin-top: -50px
+    &__bg
+        
+        &-top
+            position: absolute
+            z-index: -4
+            top: 100px
+            left: 20%
+            +reg
+            font-size: 560px
+            line-height: 680px
+            display: flex
+            align-items: center
+            letter-spacing: 0.1em
+            text-transform: uppercase
+            color: #474747
+            opacity: 0.03
+        &-bottom
+            position: absolute
+            z-index: -4
+            bottom: 220px
+            left: -50px
+            +reg
+            font-size: 560px
+            line-height: 680px
+            display: flex
+            align-items: center
+            letter-spacing: 0.1em
+            text-transform: uppercase
+            color: #474747
+            opacity: 0.03
+
+            
+            
+        
+           
+
+            
+    

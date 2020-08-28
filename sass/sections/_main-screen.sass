@@ -1,0 +1,102 @@
+.hero
+    position: relative
+    min-height: 100vh
+    background: url("../img/bg-left.png") no-repeat left 200px top 95px
+    -webkit-animation: slide 0.3s linear 
+    &__text
+        -webkit-animation: header_zoom 2s linear 
+        background: url("../img/right-arrow.png") no-repeat right 290px top 125px
+    &__title
+        -webkit-animation: header_zoom 1.5s linear 
+        position: relative
+        z-index: -199999
+        +reg
+        font-size: 160px
+        line-height: 141px
+        text-transform: uppercase
+        letter-spacing: 0.03em
+        color: $active
+        margin-bottom: 30px
+        margin-top: 5px
+        font-weight: 200
+        &-span
+            margin-left: 200px
+            display: block
+            margin-top: 40px
+    &__subtitle
+        +text
+        margin-left: 10px
+        &-info
+            display: flex
+    &__price
+        display: flex
+        justify-content: space-between
+        align-items: flex-end
+        &-text
+            +text
+            display: block
+            width: 50%
+        &-num
+            +reg
+            font-size: 90px
+            letter-spacing: 0.03em
+            margin-top: 35px
+            margin-bottom: 10px
+            margin-left: -15px
+            display: block
+        &-rub
+            margin-left: 90px
+    &__services
+        position: relative
+        z-index: -999999
+        margin-top: 130px
+        +text
+        &-num
+            +reg
+            font-size: 55px
+            line-height: 67px
+            letter-spacing: 0.05em
+            text-transform: uppercase
+            color: #E1C59F
+            margin-bottom: 10px
+    &__logo
+        opacity: 0.8
+        &-wrap
+            width: 120px
+            height: 95px
+            background: #F9F7F4
+            border-radius: 8px
+            display: flex
+            align-items: center
+            justify-content: center
+            margin-right: 25px
+            position: relative
+            z-index: 99999
+            box-shadow: 30px 30px 90px rgba(241, 237, 237, 0.7)
+    &__bottom
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__logos
+        margin-top: 120px
+        display: flex
+        align-items: center
+        position: relative
+        z-index: -99
+    .bg__text
+        margin-top: -1090px
+        margin-left: -150px
+        word-break: none
+        position: relative
+        z-index: -999999
+    .bg-first
+        &__men
+            display: block
+            margin-left: 900px
+            margin-top: -88px
+        &__women
+header
+    background: url("../img/bg-right.png") no-repeat right  top -80px
+    -webkit-animation: slide_right 1.5s linear 
+
+
