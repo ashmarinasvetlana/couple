@@ -1,14 +1,1 @@
 
-.price-block[data-aos^=fade][data-aos^=fade].aos-animate:hover {
-        opacity: 1;
-        transform: scale(1.1);
-        transition-duration: 1.3s;
-    }
-    
-
-    .price-block[data-aos^=zoom][data-aos^=zoom].aos-animate:hover {
-        opacity: 1;
-        transform: scale(1.1);
-        transition-duration: 1.3s;
-    }
-    

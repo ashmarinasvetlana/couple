@@ -16,7 +16,7 @@
     &__link
         font-size: 14px
         color: $text-color
-        margin-left: 45px
+        margin-right: 45px
         +m-reg
         &:hover
             color: $active-dark
@@ -31,16 +31,15 @@
 	    
 .menu
     position: fixed
-    z-index: 999
+    z-index: 1
     background-color:#F9F7F4
     top: 0
     width: 100vw
     height: 100vh
-    z-index: 1
     display: flex
     justify-content: center
     align-items: center
-    left: 100vw
+    left: -100vw
     transition-duration: 1.5s
     color: $text-color
     &-a
@@ -103,6 +102,10 @@
 .menu_active
     left: 0
     transition-duration: 1.2s
+@media (max-width: 990px)
+    .navbar
+        &__mobile
+            margin-left: 30px
 
 
         

@@ -12,7 +12,7 @@
         z-index: -199999
         +reg
         font-size: 160px
-        line-height: 141px
+        line-height: 80%
         text-transform: uppercase
         letter-spacing: 0.03em
         color: $active
@@ -96,7 +96,23 @@
             margin-top: -88px
         &__women
 header
-    background: url("../img/bg-right.png") no-repeat right  top -80px
+    background: url("../img/bg-right.png") no-repeat right top -80px
     -webkit-animation: slide_right 1.5s linear 
-
-
+@media (max-width: 1190px)
+    .hero
+        &__title
+            font-size: 120px
+@media (max-width: 990px)
+     .hero
+        &__title
+            font-size: 90px
+@media (max-width: 768px)
+    .hero
+        &__title
+            text-align: center
+            &-span
+                margin-left: 0px
+        &__subtitle
+            text-align: center
+    header
+        background-size: 40%

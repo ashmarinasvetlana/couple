@@ -10,6 +10,8 @@ body
     width: 100%
     max-width: 100%
     overflow-x: hidden
+img
+    max-width: 100%
 .bg-first
     +reg
     font-size: 600px
@@ -88,6 +90,9 @@ section
         font-size: 14px
         color: rgba(0, 0, 0, 0.9)
         margin-bottom: 30px
+        &:focus
+            outline: none
+            border-bottom: 0.5px solid $active-dark
 .upper__fields
     width: 100%
     display: flex
@@ -105,7 +110,15 @@ section
     color: $text-color
 input[type = "checkbox"]
     color: #fff
-
+@media (max-width: 1190px)
+    .section
+        &-title
+            &__undertitle
+                margin-bottom: 90px
+@media (max-width: 990px)
+    .section
+        &__title
+            font-size: 100px
 
 
 

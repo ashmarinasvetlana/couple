@@ -74,7 +74,26 @@
             text-transform: uppercase
             color: #474747
             opacity: 0.03
-
+@media (max-width: 1440px)
+    .contacts
+        background: #FCFCFC
+@media (max-width: 1190px)
+    .contacts
+        &__img
+            &-left
+                display: none
+@media (max-width: 768px)
+    .contacts
+        &__info
+            margin-left: 0px
+            margin-top: 0px
+        &__form
+            justify-content: center
+            flex-direction: column
+    .upper__fields
+        flex-direction: column
+    .down__fields
+        display: none
             
             
         

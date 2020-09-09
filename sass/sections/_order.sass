@@ -5,6 +5,7 @@
         display: flex
         justify-content: space-between
         align-items: center
+        flex-wrap: wrap
     &__text
         display: flex
         flex-direction: column
@@ -80,6 +81,16 @@
         margin-top: 0px
 .order__text-wrap
     display: flex
+@media (max-width: 1190px)
+    .order
+        background-size: 70%
+        &__wrap
+            justify-content: center
+@media (max-width: 768px)
+    .order
+        &-item
+            &__btn
+                opacity: 1
            
             
             

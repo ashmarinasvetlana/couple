@@ -7,15 +7,16 @@
 	<meta name="format-detection" content="telephone=no">
 	<meta name="format-detection" content="address=no">
 	<meta name="description" content=""/>
-	<meta name="yandex-verification" content="f4b0563dbac8f247" />
-	<meta name="google-site-verification" content="9gJkcVNq-wsmDA8i4pwkgkJR2JnOcBA9TQITA2JMSh8" />
 	<title>Парфюм</title>
-	<link rel="icon" type="image/x-icon" href="https://remontgidravliki.ru/favicon.ico">
+	<link rel="icon" type="image/x-icon" href="">
 	<link rel="stylesheet" type="text/css" href="css/MyFontsWebfontsKit.css">
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600&display=swap" rel="stylesheet">
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="slick/slick.css">
+	<link rel="stylesheet" href="slick/slick-theme.css">
+	<link rel="stylesheet" href="css/style.css">
+	
 	
 </head>
 <body>
@@ -53,9 +54,9 @@
 					<!-- /.logo navbar__logo -->
 					<div data-aos="zoom-in" data-aos-duration = "1900" class="navbar__mobile">
 					
-							<a href="#" class="navbar__link">Цены</a>
-							<a href="#" class="navbar__link">Доставка</a>
-							<a href="#" class="navbar__link">Контакты</a>
+							<a href="#price" class="navbar__link">Цены</a>
+							<a href="#delivery" class="navbar__link">Доставка</a>
+							<a href="#contacts" class="navbar__link">Контакты</a>
 							
 								
 					</div>
@@ -64,20 +65,19 @@
 				
 				
 				</div>
-
-			</div>
-			<!-- /.container -->
-			<div class="menu">
-				<div class="menu__links">
-					<a class="menu-a" href="#home">Главная</a>
-					<a class="menu-a" href="#prices">Цены</a></li>
-					<a class="menu-a" href="#advantages">Наши преимущества</a>
-					<a class="menu-a" href="#about">О нас</a>
-					<a class="menu-a" href="#order">Как заказать</a>
-					<a class="menu-a" href="#blog">Блог</a>
-					<a class="menu-a" href="#contacts">Контакты</a>
+				<div class="menu" id="menu">
+					<div class="menu__links">
+						<a class="menu-a" href="#price">Цены</a>
+						<a class="menu-a" href="#features">Наши преимущества</a>
+						<a class="menu-a" href="#about">О нас</a>
+						<a class="menu-a" href="#delivery">Как заказать</a>
+						<a class="menu-a" href="#instagram">Блог</a>
+						<a class="menu-a" href="#contacts">Контакты</a>
+					</div>
 				</div>
 			</div>
+			<!-- /.container -->
+		
 		</div>
 		<!-- /.navbar -->
 		<div   class="hero" id="hero">
@@ -100,19 +100,13 @@
 					</div>
 					<div  class="hero__bottom">
 						<p data-aos="zoom-in" data-aos-duration = "1900" class="hero__services"><span class="hero__services-num">2000 +</span> <br> оригинальных <br> ароматов</p>
-						<div class="hero__logos">
-							<div data-aos="zoom-in" data-aos-duration = "1000" class="hero__logo-wrap"><img src="img/logos/Dior.png" alt="Dior" class="hero__logo"></div>
-							<div data-aos="zoom-in" data-aos-duration = "1300" class="hero__logo-wrap"><img src="img/logos/tomford.png" alt="TomFord" class="hero__logo"></div>
-							<div data-aos="zoom-in" data-aos-duration = "1600" class="hero__logo-wrap"><img src="img/logos/Chanel.png" alt="Chdnel" class="hero__logo"></div>
-							<div data-aos="zoom-in" data-aos-duration = "1800" class="hero__logo-wrap"><img src="img/logos/Mancera.png" alt="Mancera" class="hero__logo"></div>
-							<div data-aos="zoom-in" data-aos-duration = "2100" class="hero__logo-wrap"><img src="img/logos/Versace.png" alt="Versace" class="hero__logo"></div>
-							<div data-aos="zoom-in" data-aos-duration = "2300" class="hero__logo-wrap"><img src="img/logos/D&G.png" alt="" class="hero__logo"></div>
-						
-						
-						
-						
-						
-						
+						<div data-aos="zoom-in" data-aos-duration = "1600" class="hero__logos">
+							<div class="hero__logo-wrap"><img src="img/logos/Dior.png" alt="Dior" class="hero__logo"></div>
+							<div class="hero__logo-wrap"><img src="img/logos/tomford.png" alt="TomFord" class="hero__logo"></div>
+							<div class="hero__logo-wrap"><img src="img/logos/Chanel.png" alt="Chdnel" class="hero__logo"></div>
+							<div class="hero__logo-wrap"><img src="img/logos/Mancera.png" alt="Mancera" class="hero__logo"></div>
+							<div class="hero__logo-wrap"><img src="img/logos/Versace.png" alt="Versace" class="hero__logo"></div>
+							<div class="hero__logo-wrap"><img src="img/logos/D&G.png" alt="" class="hero__logo"></div>
 					</div>
 					</div>
 		
@@ -144,7 +138,7 @@
 						укажите любимые ароматы <br> или любимых производителей </p>
 					<p class="price-description__text">Со временем Вы поймете, какие условия подписки подходят <br>	 именно вам. Выберите свой план</p>
 				</div>
-				</div>	
+				</div>
 				<div class="price-block__wrap">
 					<div data-aos="fade-right" data-aos-duration = "1800" class="price-block price__block">
 						<h3 class="price-block__title">Минимальный</h3>
@@ -158,7 +152,7 @@
 							<a href="" class="price-block__btn button">Заказать</a>
 						
 					</div>
-					<div data-aos="zoom-in" data-aos-duration = "1800" class="price-block price__block price-block__active">
+					<div data-aos="zoom-in" data-aos-duration = "1800" class="price-block price__block">
 						<h3 class="price-block__title active">Оптимальный</h3>
 						<p class="price-block__price active">1990 ₽
 							<span class="price-block__time">в месяц</span></p>
@@ -171,7 +165,7 @@
 							</p>
 							<p class="price-block__description">Chanel Bleu De Chanel 10 мл 
 								+ Givenchy Gentleman Cologne 5 мл</p>
-							<a href="" class="price-block__btn button button__active">Заказать</a>
+							<a href="" class="price-block__btn button">Заказать</a>
 					
 					</div>
 					<div data-aos="fade-left" data-aos-duration = "1800" class="price-block price__block">
@@ -190,7 +184,7 @@
 			</div>
 			<div class="section__bg">PRICE</div>
 		</section>
-		<section class="section features">
+		<section class="section features" id="features">
 			<div class="container">
 				<h2 class="section-title section__title">Экономьте <br> <span class="features-title__span">с нами</span></h2>
 				<span class="section-title__undertitle features__undertitle">С  Cop’le вы получите</span>
@@ -287,7 +281,7 @@
 								</div>
 								
 							</div>
-						<a href="#" class="order-item__btn button">Перейти</a>
+						<a href="https://www.instagram.com/coup__le/" class="order-item__btn button">Перейти</a>
 					</div>
 					</div>
 					<div class="order__item order-item">
@@ -357,8 +351,8 @@
 					
 					<div class="instagram-block">
 						<div class="instagram-block__item instagram-block__item-1">
-							<a class = "instagram-block__link" href="
-							" class="">
+							<a class = "instagram-block__link" href="https://www.instagram.com/coup__le/
+							" class="" target="blank">
 							<div class="instagram-block__card"><img data-aos="zoom-in" data-aos-duration = "1800"  src="img/instagram/1.jpg" alt="" class="instagram-block__img">
 								<div class="instagram-block__links">
 									<div class="instagram-block__links-left">
@@ -379,7 +373,7 @@
 								<p class="instagram-block__text">
 									В нашем блоге вы найдете информацию по выбору парфюма и интересные факты о мире парфюмерии
 								</p>
-								<a href="#" class="button instagram__btn">В Instagram</a>
+								<a href="https://www.instagram.com/coup__le/" class="button instagram__btn" target="blank">В Instagram</a>
 								<a class = "instagram-block__link" href="
 							" class="">
 								<img  data-aos="zoom-in" data-aos-duration = "1900" data-aos-delay = "300" src="img/instagram/2.jpg" alt="" class="instagram-block__img">
@@ -396,7 +390,7 @@
 								</div></div>
 						</div>
 					</a>
-<a class = "instagram-block__link" href="">
+<a class = "instagram-block__link" href="https://www.instagram.com/coup__le/" target="blank">
 	<div class="instagram-block__item instagram-block__item-3">
 		<div class="instagram-block__card"><img data-aos="zoom-in" data-aos-duration = "1800" data-aos-delay = "600" src="img/instagram/3.jpg" alt="" class="instagram-block__img">
 			<div class="instagram-block__links">
@@ -492,18 +486,10 @@
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
 <script src = "js/jquery.maskedinput.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
-<script>
-	$(function(){
-    $("[name^='#main']").click(function(){
-            var _href = $(this).attr("name");
-            $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
-            return false;
-    });
-});
-</script>
-<script>
-	var link=document.querySelector(".menu-link"),link_active=document.querySelector(".menu-link_active"),menu=document.querySelector(".menu"),nav_link=document.querySelectorAll(".menu-a");link.addEventListener("click",function(){link.classList.toggle("menu-link_active"),menu.classList.toggle("menu_active")}),menu.addEventListener("click",function(a){var b=a.target;b.classList.contains("menu-a")&&(link.classList.toggle("menu-link_active"),menu.classList.toggle("menu_active"))});
-		</script>
+<script src = "js/burger.js"></script>
+<script src  = "js/slick.min.js"></script>
+<script src="js/script.js"></script>
+
 		<script>
 			let bgTextWoomen = document.getElementById('bg__text__woomen');
 			let bgTextWoomenInstance = new Parallax(bgTextWoomen);
